@@ -270,18 +270,19 @@ userRouter.post('/api/teacher/sessions',
 
 ## ✅ Integration Checklist
 
-- [ ] Files copied to correct locations
+- [x] Files copied to correct locations
 - [ ] Import paths updated (helpers vs helper, services vs service)
-- [ ] Teacher routes added
-- [ ] Student routes added
-- [ ] Admin routes added
-- [ ] Old routes deprecated or removed
-- [ ] Test with Postman: Create session
+- [x] Teacher routes added
+- [x] Student routes added
+- [x] Admin routes added
+- [x] Old routes deprecated or removed
+- [x] Test with Postman: Create session
 - [ ] Test with Postman: Get session details
-- [ ] Test with Postman: Get sessions list
-- [ ] Test with Postman: End session
-- [ ] Test with Postman: Active sessions (student)
-- [ ] Test with Postman: Active sessions (teacher)
+- [x] Test with Postman: Get sessions list
+- [ ] Test with Postman: End session => Turn into jobs (1 hour after 
+- [ ] Test with Postman: Cancel session
+- [x] Test with Postman: Active sessions (student)
+- [x] Test with Postman: Active sessions (teacher)
 - [ ] Test with Postman: Statistics (admin)
 - [ ] Authorization working correctly
 - [ ] Error handling working
