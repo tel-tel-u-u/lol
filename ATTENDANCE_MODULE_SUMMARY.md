@@ -211,33 +211,7 @@ Automatic risk detection:
 }
 ```
 
-### **2. Mark Single Attendance**
-```javascript
-// PATCH /api/teacher/attendance/1001
-{
-  "status": "excused",
-  "notes": "Doctor appointment"
-}
-
-// Response 200
-{
-  "data": {
-    "message": "Attendance updated successfully",
-    "attendance": {
-      "id": 1001,
-      "studentName": "John Doe",
-      "studentNumber": "2024001",
-      "status": "excused",
-      "checkInTime": null,
-      "notes": "Doctor appointment",
-      "className": "7A",
-      "subject": "Mathematics"
-    }
-  }
-}
-```
-
-### **3. Student Check-In**
+### **2. Student Check-In**
 ```javascript
 // POST /api/student/attendance/check-in
 {
@@ -286,7 +260,7 @@ Automatic risk detection:
 }
 ```
 
-### **4. Get Attendance by Session**
+### **3. Get Attendance by Session**
 ```javascript
 // GET /api/users/attendance/session/501
 
@@ -329,7 +303,7 @@ Automatic risk detection:
 }
 ```
 
-### **5. Get Student Attendance History**
+### **4. Get Student Attendance History**
 ```javascript
 // GET /api/users/attendance/student/50/history?startDate=2025-10-01&endDate=2025-10-31
 
@@ -375,7 +349,7 @@ Automatic risk detection:
 }
 ```
 
-### **6. Get Attendance Summary**
+### **5. Get Attendance Summary**
 ```javascript
 // GET /api/users/attendance/summary/student/50?startDate=2025-10-01&endDate=2025-10-31
 
@@ -427,7 +401,7 @@ Automatic risk detection:
 // Similar structure but for teacher's sessions
 ```
 
-### **7. Export Attendance Report**
+### **6. Export Attendance Report**
 ```javascript
 // GET /api/teacher/attendance/report/export?classId=1&startDate=2025-10-01&endDate=2025-10-31&format=json
 
@@ -474,7 +448,7 @@ Automatic risk detection:
 }
 ```
 
-### **8. Get Attendance Analytics**
+### **7. Get Attendance Analytics**
 ```javascript
 // GET /api/admin/attendance/analytics?classId=1&startDate=2025-10-01&endDate=2025-10-31&groupBy=day
 
